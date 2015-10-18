@@ -1,11 +1,49 @@
 <html>
 	<head>
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="js/home.js"></script>
+		<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.slider').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					prevArrow: "<i class='fa fa-angle-left'></i>",
+					nextArrow: "<i class='fa fa-angle-right'></i>"
+				})
+			})
+		</script>
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
 		<link rel="stylesheet" href="assets/css/college.css" />
-		<link 
+		<style type="text/css">
+			.slider .slide img {
+				display: inline-block;
+			}
+			.slider .fa {
+				position: absolute;
+		    top: 50%;
+		    -webkit-transform: translateY(-50%);
+		    -o-transform: translateY(-50%);
+		    -moz-transform: translateY(-50%);
+		    -ms-transform: translateY(-50%);
+		    font-size: 40px;
+		    cursor: pointer;
+			}
+			.slider .fa-angle-left { left: -20px; }
+			.slider .fa-angle-right { right: -20px; }
+			.slider {
+				width: 80%;
+				margin: 0 auto;
+			}
+			.slider .slide {
+				width: 100%;
+			}
+			.slider .slide img:last-child {
+				width: 35%;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -25,20 +63,33 @@
 			</section>
 		</header>
 		<div class="main-body-wrapper">
-			<img src="assets/images/slices/college/main_banner.jpg" class="banner" />
-			<section>
-				<img src="assets/images/slices/college/side_1.jpg" class="left-side-img" />
-				<div class="written-content">
-					<p>
-						I love performing at colleges! It's literally my favorite type of crowd because they're young,fun and don't file FIRs. I have a lot of jokes about the education system, pop culture and social media that go well with this kind of crowd. And we've created a standup, music, sketch and improv mixed show called Backbenchers which completely revolves around college life.
-					</p>
-					<p>
-						Some of the colleges I've performed at include:
-						ISB Hyderabad, BITS Pilani, BITS Hyderabad, BITS Goa, IIT Powai, Jai Hind College, IIM Trichy, NIT-K, JP University, NMIMS, St. Xavier's College, VIT, Sophia College, SIES College, KEM College, DY Patil Mumbai.
-					</p>
+			<img src="assets/images/slices/home/main_banner.jpg" class="banner" />
+			<div class="slider">
+				<div class="slide">
+					<img src="assets/images/slices/home/Home_2(a).jpg" />
+					<img src="assets/images/slices/home/Home_2(b).jpg" />
 				</div>
-				<img src="assets/images/slices/college/side_2.jpg" class="right-side-img" />
-			</section>
+				<div class="slide">
+					<img src="assets/images/slices/home/Home_3(a).jpg" />
+					<img src="assets/images/slices/home/Home_3(b).jpg" />
+				</div>
+				<div class="slide">
+					<img src="assets/images/slices/home/Home_4(a).jpg" />
+					<img src="assets/images/slices/home/Home_4(b).jpg" />
+				</div>
+				<div class="slide">
+					<img src="assets/images/slices/home/Home_5(a).jpg" />
+					<img src="assets/images/slices/home/Home_5(b).jpg" />
+				</div>
+				<div class="slide">
+					<img src="assets/images/slices/home/Home_6(a).jpg" />
+					<img src="assets/images/slices/home/Home_6(b).jpg" />
+				</div>
+				<div class="slide">
+					<img src="assets/images/slices/home/Home_7(a).jpg" />
+					<img src="assets/images/slices/home/Home_7(b).jpg" />
+				</div>
+			</div>
 		</div>
 		<footer>
 			<div class="credit">Design: Saakshi Vyas</div>
