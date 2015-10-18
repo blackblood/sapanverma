@@ -1,0 +1,86 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: open-sans;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+header {
+	display: table;
+	width: 100%;
+	padding: 20px 0px;
+}
+
+header nav {
+	width: 80%;
+	float: left;
+}
+
+header nav > div {
+	width: calc(100% / 6);
+	float: left;
+	text-align: center;
+}
+
+header .social-icons {
+	width: 20%;
+	float: left;
+}
+
+header .social-icons .fa {
+	font-size: 18px;
+}
+
+header .social-icons a {
+	padding: 5px 12px;
+  border-radius: 100%;
+  background: #F8DD46;
+  margin: 0px 5px;
+  color: #333333;
+}
+
+footer {
+	display: table;
+	width: 100%;
+	padding: 20px 0px;
+	background-color: #F8DD46;
+}
+
+footer > * {
+	width: 33.33%;
+  float: left;
+  text-align: center;
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url(/assets/fonts/OpenSans-Semibold.ttf);
+}
+
+.main-body-wrapper .banner {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.main-body-wrapper .written-content {
+	width: calc(100% - 672px);
+	float: left;
+	margin-top: 200px;
+}
+
+.main-body-wrapper .written-content p {
+	line-height: 26px;
+}
+
+.main-body-wrapper .left-side-img, .main-body-wrapper .right-side-img {
+	float: left;
+}
