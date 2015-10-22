@@ -5,6 +5,48 @@
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="assets/css/college.css" />
+		<style type="text/css">
+			.mailbox {
+				width: 420px;
+				height: 900px;
+				margin: 0 auto;
+				display: block;
+				margin-top: 50px;
+				background-image: url('/assets/images/slices/contact/Contact-me_1.jpg');
+				background-position: -40px 0px;
+				position: relative;
+			}
+			.mailbox input[type=text], .mailbox input[type=email], .mailbox textarea {
+				position: absolute;
+		    border: 0px;
+		    background: none;
+		    outline: none;
+		    color: #193952;
+				-webkit-appearance: none;
+			}
+			.mailbox .name {
+				width: 54%;
+				right: 41px;
+				top: 88px;
+			}
+			.mailbox .email {
+				right: 42px;
+			  top: 144px;
+			  width: 51%;
+			}
+			.mailbox .mobile {
+				right: 41px;
+		    top: 200px;
+		    width: 35%;
+			}
+			.mailbox textarea {
+				width: 67%;
+		    right: 41px;
+		    top: 297px;
+		    height: 63px;
+		    resize: none;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -24,20 +66,12 @@
 			</section>
 		</header>
 		<div class="main-body-wrapper">
-			<img src="assets/images/slices/corporate/main_banner.jpg" class="banner" />
-			<section>
-				<img src="assets/images/slices/corporate/side_1.jpg" class="left-side-img" />
-				<div class="written-content">
-					<p>
-						I've performed and hosted over 100 corporate events in the past. At such events I make sure that my content is clean, non-offensive and nothing is below the belt(unless some is wearing crocs). I can also write some jokes about your company or the event on request. The duration can range anywhere between 5 minutes to 45 minutes depending on your demand, budgets and audience's mood.
-					</p>
-					<p>
-						Some of the corporate clients I have performed and hosted events for include:<br/>
-						Indian Navy, Audi, Google, Vodafone, HSBC Bank, Deloitte, Essar, Microsoft, HUL, Puma, Volkswagen, Kotak Mahindra Bank, Starbucks, Cleartrip, Leo Burnett, Gilette, SBI Capital, Top Gear, Costa Coffee, PromaxBDA, Grazia, Vodafone, EXIM Bank, Bombay Realty, Directi, EEXMAX Awards, PromaxBDA Awards.
-					</p>
-				</div>
-				<img src="assets/images/slices/corporate/side_2.jpg" class="right-side-img" />
-			</section>
+			<div class="mailbox">
+				<input type="text" class="name" />
+				<input type="email" class="email" />
+				<input type="text" class="mobile" />
+				<textarea rows="10" columns="20"></textarea>
+			</div>
 		</div>
 		<footer>
 			<div class="credit">Design: Saakshi Vyas</div>
