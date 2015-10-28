@@ -1,0 +1,52 @@
+.intro-section {
+	background-image: url('/assets/images/slices/profile/Profile_3.png');
+	padding-bottom: 100px;
+}
+.intro-section .hello-img {
+	display: block;
+	margin: 0 auto;
+}
+.intro-section p {
+	width: 41%;
+  margin: 0 auto;
+  line-height: 30px;
+  color: #1A3851;
+}
+.intro-section-2 {
+	background-image: url('/assets/images/slices/profile/Profile_4.png'); 
+	background-color: #EAF5FA;
+	background-repeat: no-repeat;
+	float: left;
+}
+.intro-section-2 .paragraph {
+	width: 50%;
+	float:left;
+	padding: 187px 0px;
+}
+.intro-section-2 .paragraph p {
+	width: 80%;
+	margin: 0 auto;
+	line-height: 30px;
+	color: #1A3851;
+}
+.intro-section-3 .row {
+	background-image: url('/assets/images/slices/profile/Pattern.png');
+	width:100%;
+	display:table;
+}
+.intro-section-3 .paragraph, .intro-section-3 .image-wrapper {
+	width: 50%;
+	float: left;
+}
+.intro-section-3 .image-wrapper img {
+	width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.intro-section-3 .paragraph p {
+	color: #1A3851;
+	padding-top: 150px;
+	width: 70%;
+  margin: 0 auto;
+  line-height: 30px;
+}
