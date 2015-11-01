@@ -71,12 +71,33 @@
 				text-align: center;
 				margin-top: 0px;
 			}
+			@media all and (max-width: 480px) {
+				.videos .description {
+					width: 90%;
+				}
+			}
 		</style>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.video-slider').slick({
 					slidesToShow: 3,
 					slidesToScroll: 1,
+					responsive: [
+						{
+							breakpoint: 960,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 480,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					],
 					prevArrow: "<i class='fa fa-angle-left'></i>",
 					nextArrow: "<i class='fa fa-angle-right'></i>"
 				})
@@ -112,7 +133,18 @@
 		</script>
 	</head>
 	<body>
+		<div class="dim-cloak"></div>
+		<aside class="mobile-navbar">
+			<i class="fa fa-remove"></i>
+			<a href="/">Home</a>
+			<a href="/profile.html">Profile</a>
+			<a href="/videos.html">Videos</a>
+			<a href="/corporate.html">Corporate Shows</a>
+			<a href="/college.html">College Gigs</a>
+			<a href="/contact.html">Contact Me</a>
+		</aside>
 		<header>
+			<i class="fa fa-align-justify"></i>
 			<nav>
 				<div><a href="/" class="uppercase">Home</a></div>
 				<div><a href="/profile.html" class="uppercase">Profile</a></div>

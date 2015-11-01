@@ -6,4 +6,15 @@ $(document).ready(function() {
 			$(this).addClass('active')
 		}
 	})
+	$('header .fa-align-justify').on('click', function() {
+		$('aside.mobile-navbar').addClass('showNavbar')
+		$('aside.mobile-navbar').removeClass('hideNavbar')
+		$('.dim-cloak').show()
+	})
+
+	$('aside.mobile-navbar .fa-remove').on('click', function() {
+		$('aside.mobile-navbar').removeClass('showNavbar')
+		$('aside.mobile-navbar').addClass('hideNavbar')
+		$('.dim-cloak').hide()
+	})
 })

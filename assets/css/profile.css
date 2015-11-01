@@ -12,6 +12,9 @@
   line-height: 30px;
   color: #1A3851;
 }
+.intro-section-2 img {
+	width: 100%;
+}
 .intro-section-2 {
 	background-image: url('/assets/images/slices/profile/Profile_4.png'); 
 	background-color: #EAF5FA;
@@ -53,4 +56,44 @@
 }
 .intro-section-3 .row:last-child {
 	padding-bottom: 100px;
+}
+.intro-section-2 .image-wrapper {
+	width: 50%;
+	float:left;
+}
+.intro-section-2 .image-wrapper img {
+	display:block;
+	margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+	.intro-section {
+		background: none;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.intro-section p {
+		width: 80%;
+	}
+	.intro-section .hello-img {
+		display: none;
+	}
+	.intro-section-2 {
+		width: 100%;
+		background-image: none;
+	}
+	.intro-section-2 .paragraph {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.intro-section-2 .image-wrapper img {
+		display: none !important;
+	}
+	.intro-section-3 .paragraph {
+		width: 100%;
+	}
+	.intro-section-3 .image-wrapper img {
+		display: none !important;
+	}
 }
