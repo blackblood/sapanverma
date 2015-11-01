@@ -2,6 +2,7 @@
 	<head>
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+		<script type="text/javascript" src="/assets/js/header.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.slider').slick({
@@ -10,50 +11,39 @@
 					prevArrow: "<i class='fa fa-angle-left'></i>",
 					nextArrow: "<i class='fa fa-angle-right'></i>"
 				})
+				resized = false
+				$(window).resize(function(){
+					if($(window).width() < 768) {
+						resized = true
+						$('.slider .slide .writeup').each(function(item){
+							$(this).insertAfter($(this).parent().find('.photo'))
+						})
+					} else {
+						if(resized) {
+							$('.slider .slide .writeup').each(function(item){
+								$(this).insertBefore($(this).parent().find('.photo'))
+							})
+						}
+					}
+				})
 			})
 		</script>
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
-		<link rel="stylesheet" href="assets/css/college.css" />
-		<style type="text/css">
-			.slider .slide img {
-				display: inline-block;
-			}
-			.slider .fa {
-				position: absolute;
-		    top: 50%;
-		    -webkit-transform: translateY(-50%);
-		    -o-transform: translateY(-50%);
-		    -moz-transform: translateY(-50%);
-		    -ms-transform: translateY(-50%);
-		    font-size: 40px;
-		    cursor: pointer;
-			}
-			.slider .fa-angle-left { left: -20px; }
-			.slider .fa-angle-right { right: -20px; }
-			.slider {
-				width: 75%;
-				margin: 0 auto;
-			}
-			.slider .slide {
-				width: 100%;
-			}
-			.slider .slide img:last-child {
-				width: 35%;
-			}
-		</style>
+		<link rel="stylesheet" href="/assets/css/college.css" />
+		<link rel="stylesheet" href="/assets/css/slider.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
-				<div><a href="#" class="uppercase">Home</a></div>
-				<div><a href="#" class="uppercase">Profile</a></div>
-				<div><a href="#" class="uppercase">Videos</a></div>
-				<div><a href="#" class="uppercase">Corporate Shows</a></div>
-				<div><a href="#" class="uppercase">College Gigs</a></div>
-				<div><a href="#" class="uppercase">Contact Me</a></div>
+				<div><a href="/" class="uppercase">Home</a></div>
+				<div><a href="/profile.html" class="uppercase">Profile</a></div>
+				<div><a href="/videos.html" class="uppercase">Videos</a></div>
+				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
+				<div><a href="/college.html" class="uppercase">College Gigs</a></div>
+				<div><a href="/contact.html" class="uppercase">Contact Me</a></div>
 			</nav>
 			<section class="social-icons">
 				<a href=""><i class="fa fa-facebook"></i></a>
@@ -66,28 +56,28 @@
 			<img src="assets/images/slices/home/main_banner.jpg" class="banner" />
 			<div class="slider">
 				<div class="slide">
-					<img src="assets/images/slices/home/Home_2(a).jpg" />
-					<img src="assets/images/slices/home/Home_2(b).jpg" />
+					<img src="assets/images/slices/home/Home_2(a).jpg" class="writeup" />
+					<img src="assets/images/slices/home/Home_2(b).jpg" class="photo" />
 				</div>
 				<div class="slide">
-					<img src="assets/images/slices/home/Home_3(a).jpg" />
-					<img src="assets/images/slices/home/Home_3(b).jpg" />
+					<img src="assets/images/slices/home/Home_3(a).jpg" class="writeup" />
+					<img src="assets/images/slices/home/Home_3(b).jpg" class="photo" />
 				</div>
 				<div class="slide">
-					<img src="assets/images/slices/home/Home_4(a).jpg" />
-					<img src="assets/images/slices/home/Home_4(b).jpg" />
+					<img src="assets/images/slices/home/Home_4(a).jpg" class="writeup" />
+					<img src="assets/images/slices/home/Home_4(b).jpg" class="photo" />
 				</div>
 				<div class="slide">
-					<img src="assets/images/slices/home/Home_5(a).jpg" />
-					<img src="assets/images/slices/home/Home_5(b).jpg" />
+					<img src="assets/images/slices/home/Home_5(a).jpg" class="writeup" />
+					<img src="assets/images/slices/home/Home_5(b).jpg" class="photo" />
 				</div>
 				<div class="slide">
-					<img src="assets/images/slices/home/Home_6(a).jpg" />
-					<img src="assets/images/slices/home/Home_6(b).jpg" />
+					<img src="assets/images/slices/home/Home_6(a).jpg" class="writeup" />
+					<img src="assets/images/slices/home/Home_6(b).jpg" class="photo" />
 				</div>
 				<div class="slide">
-					<img src="assets/images/slices/home/Home_7(a).jpg" />
-					<img src="assets/images/slices/home/Home_7(b).jpg" />
+					<img src="assets/images/slices/home/Home_7(a).jpg" class="writeup" />
+					<img src="assets/images/slices/home/Home_7(b).jpg" class="photo" />
 				</div>
 			</div>
 		</div>

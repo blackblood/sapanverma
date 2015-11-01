@@ -1,0 +1,167 @@
+<html>
+	<head>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/header.js"></script>
+		<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
+		<link rel="stylesheet" href="assets/css/college.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/slider.css" />
+		<style type="text/css">
+			.videos {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				background: url('/assets/images/slices/profile/Pattern.png');
+			}
+			.video-container {
+				display: inline-block;
+				position: relative;
+			}
+			.video-container iframe {
+				position: absolute;
+				z-index: +2;
+			}
+			.video-container img, .video-slider img {
+				max-width: 100%;
+				display: block;
+			}
+			.video-slider img {
+				margin: 0 10px;
+			}
+			.video-slider .slide {
+				margin: 0px 20px;
+				display: block;
+				height: auto;
+				cursor: pointer;
+			}
+			.video-slider .slide p {
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 14px;
+			}
+			.video-slider {
+				width: 75%;
+				display: block;
+				margin: 0 auto;
+				position: relative;
+				margin-bottom: 50px;
+			}
+			.video-slider .fa {
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				font-size: 40px;
+				cursor: pointer;
+			}
+			.video-slider .fa-angle-left { left: -20px; }
+			.video-slider .fa-angle-right { right: -35px; }
+			.videos .description {
+				width: 50%;
+				margin: 25px auto;
+				display: block;
+				margin-top: 0px;
+			}
+			.videos .description p {
+				line-height: 30px;
+				text-align: center;
+				margin-top: 0px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.video-slider').slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					prevArrow: "<i class='fa fa-angle-left'></i>",
+					nextArrow: "<i class='fa fa-angle-right'></i>"
+				})
+				$('.video-container img').on('load', function(){
+					var img_width = $('.video-container img').width()
+					var img_height = $('.video-container img').height()
+					var video_left_offset = Math.round(0.2407 * img_width)
+					var video_top_offset = Math.round(0.1910 * img_height)
+					var video_width = Math.round(0.5538 * img_width)
+					var video_height = Math.round(0.5056 * img_height)
+					$('.video-container iframe').css('left',video_left_offset + 'px')
+					$('.video-container iframe').css('top',video_top_offset + 'px')
+					$('.video-container iframe').css('width',video_width + 'px')
+					$('.video-container iframe').css('height',video_height + 'px')
+				})
+				$(window).resize(function(){
+					var img_width = $('.video-container img').width()
+					var img_height = $('.video-container img').height()
+					var video_left_offset = Math.round(0.2407 * img_width)
+					var video_top_offset = Math.round(0.1910 * img_height)
+					var video_width = Math.round(0.5538 * img_width)
+					var video_height = Math.round(0.5056 * img_height)
+					$('.video-container iframe').css('left',video_left_offset + 'px')
+					$('.video-container iframe').css('top',video_top_offset + 'px')
+					$('.video-container iframe').css('width',video_width + 'px')
+					$('.video-container iframe').css('height',video_height + 'px')
+				})
+				$('.video-slider .slide').on('click', function() {
+					var src = $(this).data('video')
+					$('.video-container iframe').attr('src',src)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div><a href="/" class="uppercase">Home</a></div>
+				<div><a href="/profile.html" class="uppercase">Profile</a></div>
+				<div><a href="/videos.html" class="uppercase">Videos</a></div>
+				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
+				<div><a href="/college.html" class="uppercase">College Gigs</a></div>
+				<div><a href="/contact.html" class="uppercase">Contact Me</a></div>
+			</nav>
+			<section class="social-icons">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-youtube"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+			</section>
+		</header>
+		<div class="main-body-wrapper">
+			<section class='video-container'>
+				<img src="/assets/images/slices/video/Video_1.jpg" />
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/mthQNesYIqE" frameborder="0" allowfullscreen></iframe>
+			</section>
+			<div class="videos">
+				<div class='description'>
+					<p>Pretty much all the sketches and music videos that you see on the East India Comedy Youtube channel are directed and co-written by me.</p>
+					<p>Here are some of my favorites.</p>
+				</div>
+				<div class="video-slider">
+					<div class='slide' data-video="https://www.youtube.com/embed/HPphmtl1BNc">
+						<img src="/assets/images/slices/video/Video_1.jpg" />
+						<p>The Ghanta Awards 2015: Sapan Verma on worst couple</p>
+					</div>
+					<div class='slide'>
+						<img src="/assets/images/slices/video/Video_1.jpg" />
+						<p>EIC: Sapan Verma on email ids</p>
+					</div>
+					<div class='slide'>
+						<img src="/assets/images/slices/video/Video_1.jpg" />
+						<p>Sapan Verma on flight announcements</p>
+					</div>
+					<div class='slide'>
+						<img src="/assets/images/slices/video/Video_1.jpg" />
+						<p>Sapan Verma on flight announcements</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="credit">Design: Saakshi Vyas</div>
+			<div class="copyright">2015 Sapan Verma</div>
+			<div class="to-top"><a href="#">Back to top</a></div>
+		</footer>
+	</body>
+</html>

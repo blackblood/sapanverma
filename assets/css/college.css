@@ -4,24 +4,37 @@ body {
 	font-family: open-sans;
 }
 
+* {
+	outline: none;
+}
+
 a {
 	text-decoration: none;
 	color: #333333;
 }
 
+p {
+	color: #1A3851;
+}
 .uppercase {
 	text-transform: uppercase;
 }
-
+header nav a.active {
+	border-bottom: 5px solid #F8DD46;
+}
 header {
 	display: table;
 	width: 100%;
-	padding: 20px 0px;
 }
 
 header nav {
 	width: 80%;
 	float: left;
+}
+
+header nav a {
+	display: block;
+	padding: 20px 0px;
 }
 
 header nav > div {
@@ -33,6 +46,7 @@ header nav > div {
 header .social-icons {
 	width: 20%;
 	float: left;
+	padding: 20px 0px;
 }
 
 header .social-icons .fa {
