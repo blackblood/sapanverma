@@ -8,14 +8,65 @@
 	background-position: -40px 0px;
 	position: relative;
 }
+.mailbox-mobile {
+	display: none;
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 20px;
+	background-color: #FDFAF1;
+	border: 1px solid #666666;
+	box-sizing: border-box;
+	height: 520px;
+	margin-bottom: 100px;
+}
+@media all and (max-width: 570px) {
+	.mailbox-mobile {
+		width: 80%;
+	}
+}
+.mailbox-mobile label {
+	display: block;
+}
+.mailbox-mobile .name,.mailbox-mobile .email,.mailbox-mobile .mobile {
+	width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #666666;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.mailbox-mobile textarea {
+	border: 0px;
+  border-bottom: 2px solid #666666;
+  resize: none;
+  width: 100%;
+  background: transparent;
+  height: 100px;
+  margin-top: 10px;
+}
+.mailbox-mobile input[type=submit] {
+	display: block;
+  margin: 20px auto;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  border: 2px solid #666666;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
 @media all and (max-width: 680px) {
 	.mailbox {
-		background-image: url('/assets/images/slices/contact/mailbox_mobile.png');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: 50% 0 ;
+		display: none !important;
+	}
+	.mailbox-mobile {
+		display: block;
+	}
+	body .main-body-wrapper .intro-line {
 		width: 80%;
-		height: 80vh;
+		margin-bottom: 25px;
 	}
 	.mailbox .name, .mailbox .email, .mailbox .mobile {
     width: 77% !important;
