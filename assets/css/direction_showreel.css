@@ -1,0 +1,83 @@
+.videos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: url('/assets/images/slices/profile/Pattern.png');
+}
+.video-container {
+	display: inline-block;
+	position: relative;
+}
+.video-container iframe {
+	position: absolute;
+	z-index: +2;
+}
+.video-container img, .video-slider img {
+	max-width: 100%;
+	display: block;
+}
+.video-slider img {
+	margin: 0 10px;
+}
+.video-slider .slide {
+	margin: 0px 20px;
+	display: block;
+	height: auto;
+	cursor: pointer;
+}
+.video-slider .slide p {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.video-slider {
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 50px;
+}
+.video-slider .fa {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	font-size: 40px;
+	cursor: pointer;
+}
+.video-slider .fa-angle-left { left: -20px; }
+.video-slider .fa-angle-right { right: -35px; }
+.videos .description {
+	width: 50%;
+	margin: 25px auto;
+	display: block;
+	margin-top: 0px;
+}
+.videos .description p {
+	line-height: 30px;
+	text-align: center;
+	margin-top: 0px;
+}
+nav .title {
+	padding: 20px 0px;
+}
+nav .title:hover {
+	cursor: pointer;
+}
+nav .dropdown {
+	position: absolute;
+  z-index: +2;
+  background: #F8DD46;
+  width: 100%;
+  display: none;
+}
+nav .dropdown a:hover {
+	background: #999999;
+	color: #fff;
+}
+@media all and (max-width: 480px) {
+	.videos .description {
+		width: 90%;
+	}
+}

@@ -10,9 +10,19 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
 		<link rel="stylesheet" href="assets/css/college.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/slider.css" />
-		<link rel="stylesheet" type="text/css" href="/assets/css/videos.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/direction_showreel.css" />
 		<script type="text/javascript">
 			$(document).ready(function() {
+				$('nav .title').hover(function(){
+					$('nav .dropdown').show()
+				},function(){
+					$('nav .dropdown').hide()
+				})
+				$('nav .dropdown').hover(function(){
+					$('nav .dropdown').show()
+				},function(){
+					$('nav .dropdown').hide()
+				})
 				$('.video-slider').slick({
 					slidesToShow: 3,
 					slidesToScroll: 1,
@@ -63,15 +73,6 @@
 					var src = $(this).data('video')
 					$('.video-container iframe').attr('src',src)
 				})
-				$(window).resize(function(){
-					if($(window).width() < 580) {
-						var video_description = $('.videos .description')
-						$('.main-body-wrapper').prepend(video_description)
-					} else {
-						var video_description = $('.main-body-wrapper > .description')
-						$('.videos').prepend(video_description)
-					}
-				})
 			})
 		</script>
 	</head>
@@ -110,41 +111,39 @@
 			</section>
 		</header>
 		<div class="main-body-wrapper">
-			<div class='row video-titles-mob'>
-				<a href='/videos.html'>Standup Comedy</a>
-				<a href='/directional_showreel.html'>Directional Showreel</a>
-			</div>
 			<section class='video-container'>
-				<img src="/assets/images/slices/video/Video_2.jpg" />
-				<iframe width="420" height="315" src="https://www.youtube.com/embed/_FhhWBl6iIU?list=PLox1kfMm75BypaHd6vcfDI7JjQEYl6Qb6" frameborder="0" allowfullscreen></iframe>
+				<img src="/assets/images/slices/video/Video_1.jpg" />
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/EiIxkOah09E?list=PLox1kfMm75BzudybFwp35p6xIxvV8B1LU" frameborder="0" allowfullscreen></iframe>
 			</section>
 			<div class="videos">
 				<div class='description'>
-					<p>Pretty much all the sketches and music videos that you see on the East India Comedy Youtube channel are directed and co-written by me.</p>
-					<p>Here are some of my favorites.</p>
+					<p>Here are some of my standup clips.If you enjoy them then drop in for a show or hire for one.If you don't enjoy them then you should see me live, so drop in for a show or hire me for one.</p>
 				</div>
 				<div class="video-slider">
-					<div class='slide' data-video="https://www.youtube.com/embed/_FhhWBl6iIU?list=PLox1kfMm75BypaHd6vcfDI7JjQEYl6Qb6">
-						<img src="http://img.youtube.com/vi/_FhhWBl6iIU/0.jpg" />
-						<p>Sapan Verma on Mumbai and Lonavala</p>
+					<div class='slide' data-video="https://www.youtube.com/embed/EiIxkOah09E?list=PLox1kfMm75BzudybFwp35p6xIxvV8B1LU">
+						<img src="http://img.youtube.com/vi/EiIxkOah09E/0.jpg" />
+						<p>Sex Education in India</p>
 					</div>
-					<div class='slide' data-video="https://www.youtube.com/embed/Li-I2Z9Zoms?list=PLox1kfMm75Bw2ZkZ9R32fJlZFz5Xp13vz">
-						<img src="http://img.youtube.com/vi/Li-I2Z9Zoms/0.jpg" />
-						<p>The Ghanta Awards 2015: Sapan Verma on worst couple</p>
-					</div>
-					<div class='slide' data-video="https://www.youtube.com/embed/AFw9VpE-oBA?list=PLox1kfMm75BypaHd6vcfDI7JjQEYl6Qb6">
-						<img src="http://img.youtube.com/vi/AFw9VpE-oBA/0.jpg" />
+					<div class='slide' data-video="https://www.youtube.com/embed/PxoSPucPKrY?list=PLox1kfMm75Bx6ANCgCRexgTokYB-Z7CPr">
+						<img src="http://img.youtube.com/vi/PxoSPucPKrY/0.jpg" />
 						<p>EIC: Sapan Verma on email ids</p>
 					</div>
-					<div class='slide' data-video="https://www.youtube.com/embed/Kqub8fs3pk4?list=PLox1kfMm75BzUCg7nbJ_u7q6ik_aBcotI">
-						<img src="http://img.youtube.com/vi/Kqub8fs3pk4/0.jpg" />
-						<p>Sapan Verma on Women vs Engineering Colleges</p>
-					</div>
-					<div class='slide' data-video="https://www.youtube.com/embed/uED-OpeDapk?list=PLox1kfMm75BypaHd6vcfDI7JjQEYl6Qb6">
-						<img src="http://img.youtube.com/vi/uED-OpeDapk/0.jpg" />
+					<div class='slide'>
+						<img src="http://img.youtube.com/vi/dS2lLiSsoyM/0.jpg" />
 						<p>Sapan Verma on flight announcements</p>
 					</div>
-					
+					<div class='slide'>
+						<img src="http://img.youtube.com/vi/lIsIOsXkID4/0.jpg" />
+						<p>Sapan Verma on flight announcements</p>
+					</div>
+					<div class='slide'>
+						<img src="http://img.youtube.com/vi/bdPqGLB18js/0.jpg" />
+						<p>Sapan Verma on flight announcements</p>
+					</div>
+					<div class='slide'>
+						<img src="http://img.youtube.com/vi/21ZtFxp6h54/0.jpg" />
+						<p>Sapan Verma on flight announcements</p>
+					</div>
 				</div>
 			</div>
 		</div>

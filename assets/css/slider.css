@@ -1,5 +1,6 @@
 .slider .slide img {
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 }
 .slider .fa {
 	position: absolute;
@@ -35,10 +36,10 @@
 	height: auto !important;
 }
 .slider .slide .photo {
-	width: 35%;
+	width: 50%;
 }
 .slider .slide .writeup {
-	width: 60%;
+	width: 50%;
 }
 @media all and (max-width: 768px) {
 	.slider .slide img {

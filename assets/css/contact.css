@@ -1,0 +1,83 @@
+.mailbox {
+	width: 420px;
+	height: 900px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 50px;
+	background-image: url('/assets/images/slices/contact/Contact-me_1.jpg');
+	background-position: -40px 0px;
+	position: relative;
+}
+@media all and (max-width: 680px) {
+	.mailbox {
+		background-image: url('/assets/images/slices/contact/mailbox_mobile.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 0 ;
+		width: 80%;
+		height: 80vh;
+	}
+	.mailbox .name, .mailbox .email, .mailbox .mobile {
+    width: 77% !important;
+    left: 11.3%;
+  }
+  /*.mailbox .name {
+    top: 124px !important;
+	}*/
+	.mailbox .email {
+		top: 219px !important;
+	}
+	.mailbox .mobile {
+		top: 314px !important;
+	}
+	.main-body-wrapper .mailbox textarea {
+		width: 77%;
+    left: 52px;
+    line-height: 30px;
+    top: 428px;
+    height: 118px;
+    resize: none;
+	}
+
+}
+.mailbox input[type=text], .mailbox input[type=email], .mailbox textarea {
+	position: absolute;
+	border: 0px;
+	background: none;
+	outline: none;
+	color: #193952;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.mailbox .name {
+	width: 54%;
+	right: 41px;
+	top: 88px;
+}
+.mailbox .email {
+	right: 42px;
+  top: 144px;
+  width: 51%;
+}
+.mailbox .mobile {
+	right: 41px;
+top: 200px;
+width: 35%;
+}
+.mailbox textarea {
+	width: 67%;
+right: 41px;
+top: 297px;
+height: 63px;
+resize: none;
+}
+.main-body-wrapper {
+	background: url('/assets/images/slices/profile/Pattern.png');
+}
+.main-body-wrapper .intro-line {
+	width: 42%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 80px;
+	line-height: 30px;
+}

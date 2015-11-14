@@ -217,6 +217,24 @@ header .fa-align-justify {
 	}
 }
 
+nav .title {
+	padding: 20px 0px;
+}
+nav .title:hover {
+	cursor: pointer;
+}
+nav .dropdown {
+	position: absolute;
+  z-index: +2;
+  background: #F8DD46;
+  width: 100%;
+  display: none;
+}
+nav .dropdown a:hover {
+	background: #999999;
+	color: #fff;
+}
+
 @media all and (max-width: 768px) {
 	footer .to-top {
 		display: none;

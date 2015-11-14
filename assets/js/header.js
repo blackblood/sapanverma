@@ -6,6 +6,16 @@ $(document).ready(function() {
 			$(this).addClass('active')
 		}
 	})
+	$('nav .title').hover(function(){
+		$('nav .dropdown').show()
+	},function(){
+		$('nav .dropdown').hide()
+	})
+	$('nav .dropdown').hover(function(){
+		$('nav .dropdown').show()
+	},function(){
+		$('nav .dropdown').hide()
+	})
 	$('header .fa-align-justify').on('click', function() {
 		$('aside.mobile-navbar').addClass('showNavbar')
 		$('aside.mobile-navbar').removeClass('hideNavbar')

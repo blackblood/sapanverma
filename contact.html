@@ -1,52 +1,20 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="/assets/js/header.js"></script>
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="assets/css/college.css" />
-		<style type="text/css">
-			.mailbox {
-				width: 420px;
-				height: 900px;
-				margin: 0 auto;
-				display: block;
-				margin-top: 50px;
-				background-image: url('/assets/images/slices/contact/Contact-me_1.jpg');
-				background-position: -40px 0px;
-				position: relative;
-			}
-			.mailbox input[type=text], .mailbox input[type=email], .mailbox textarea {
-				position: absolute;
-		    border: 0px;
-		    background: none;
-		    outline: none;
-		    color: #193952;
-				-webkit-appearance: none;
-			}
-			.mailbox .name {
-				width: 54%;
-				right: 41px;
-				top: 88px;
-			}
-			.mailbox .email {
-				right: 42px;
-			  top: 144px;
-			  width: 51%;
-			}
-			.mailbox .mobile {
-				right: 41px;
-		    top: 200px;
-		    width: 35%;
-			}
-			.mailbox textarea {
-				width: 67%;
-		    right: 41px;
-		    top: 297px;
-		    height: 63px;
-		    resize: none;
-			}
-		</style>
+		<link rel="stylesheet" href="/assets/css/college.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/contact.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(window).resize(function(){
+					var height = $('.mailbox').height()
+					$('.mailbox .name').css('top',Math.round(0.2026 * height) + 'px')
+				})
+			})
+		</script>
 	</head>
 	<body>
 		<div class="dim-cloak"></div>
@@ -64,7 +32,13 @@
 			<nav>
 				<div><a href="/" class="uppercase">Home</a></div>
 				<div><a href="/profile.html" class="uppercase">Profile</a></div>
-				<div><a href="/videos.html" class="uppercase">Videos</a></div>
+				<div class="uppercase" style="position:relative;">
+					<div class="title">Videos</div>
+					<div class="dropdown">
+						<a href="/videos.html">Standup Comedy</a>
+						<a href="/direction_showreel.html">Directional <br /> Showreel</a>
+					</div>
+				</div>
 				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
 				<div><a href="/college.html" class="uppercase">College Gigs</a></div>
 				<div><a href="/contact.html" class="uppercase">Contact Me</a></div>
@@ -77,6 +51,7 @@
 			</section>
 		</header>
 		<div class="main-body-wrapper">
+			<p class="intro-line">Got an event, a corporate show, a college festival or a party coming up? Feel free to hire me.I like money.</p>
 			<div class="mailbox">
 				<input type="text" class="name" />
 				<input type="email" class="email" />

@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
 		<script type="text/javascript" src="/assets/js/header.js"></script>
@@ -34,6 +35,11 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
 		<link rel="stylesheet" href="/assets/css/college.css" />
 		<link rel="stylesheet" href="/assets/css/slider.css" />
+		<style type="text/css">
+			.main-body-wrapper {
+				background: url('/assets/images/slices/profile/Pattern.png');
+			}
+		</style>
 	</head>
 	<body>
 		<div class="dim-cloak"></div>
@@ -51,7 +57,13 @@
 			<nav>
 				<div><a href="/" class="uppercase">Home</a></div>
 				<div><a href="/profile.html" class="uppercase">Profile</a></div>
-				<div><a href="/videos.html" class="uppercase">Videos</a></div>
+				<div class="uppercase" style="position:relative;">
+					<div class="title">Videos</div>
+					<div class="dropdown">
+						<a href="/videos.html">Standup Comedy</a>
+						<a href="/direction_showreel.html">Directional <br /> Showreel</a>
+					</div>
+				</div>
 				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
 				<div><a href="/college.html" class="uppercase">College Gigs</a></div>
 				<div><a href="/contact.html" class="uppercase">Contact Me</a></div>
@@ -68,27 +80,27 @@
 			<div class="slider">
 				<div class="slide">
 					<img src="assets/images/slices/home/Home_2(a).jpg" class="writeup" />
-					<img src="assets/images/slices/home/Home_2(b).jpg" class="photo" />
+					<img src="assets/images/slices/home/Home_5.png" class="photo" />
 				</div>
 				<div class="slide">
 					<img src="assets/images/slices/home/Home_3(a).jpg" class="writeup" />
-					<img src="assets/images/slices/home/Home_3(b).jpg" class="photo" />
+					<img src="assets/images/slices/home/Home_4.png" class="photo" />
 				</div>
 				<div class="slide">
 					<img src="assets/images/slices/home/Home_4(a).jpg" class="writeup" />
-					<img src="assets/images/slices/home/Home_4(b).jpg" class="photo" />
+					<img src="assets/images/slices/home/Home_3.png" class="photo" />
 				</div>
 				<div class="slide">
 					<img src="assets/images/slices/home/Home_5(a).jpg" class="writeup" />
-					<img src="assets/images/slices/home/Home_5(b).jpg" class="photo" />
+					<img src="assets/images/slices/home/Home_2.png" class="photo" />
 				</div>
 				<div class="slide">
 					<img src="assets/images/slices/home/Home_6(a).jpg" class="writeup" />
-					<img src="assets/images/slices/home/Home_6(b).jpg" class="photo" />
+					<img src="assets/images/slices/home/Home_1.png" class="photo" />
 				</div>
 				<div class="slide">
 					<img src="assets/images/slices/home/Home_7(a).jpg" class="writeup" />
-					<img src="assets/images/slices/home/Home_7(b).jpg" class="photo" />
+					<img src="assets/images/slices/home/Home_6.png" class="photo" />
 				</div>
 			</div>
 		</div>
