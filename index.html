@@ -9,6 +9,8 @@
 				$('.slider').slick({
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					swipe: true,
+					touchMove: true,
 					prevArrow: "<i class='fa fa-angle-left'></i>",
 					nextArrow: "<i class='fa fa-angle-right'></i>"
 				})
@@ -27,6 +29,18 @@
 						}
 					}
 				})
+				if($(window).width() < 768) {
+					resized = true
+					$('.slider .slide .writeup').each(function(item){
+						$(this).insertAfter($(this).parent().find('.photo'))
+					})
+				} else {
+					if(resized) {
+						$('.slider .slide .writeup').each(function(item){
+							$(this).insertBefore($(this).parent().find('.photo'))
+						})
+					}
+				}
 			})
 		</script>
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
@@ -69,10 +83,10 @@
 				<div><a href="/contact.html" class="uppercase">Contact Me</a></div>
 			</nav>
 			<section class="social-icons">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-youtube"></i></a>
-				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/TheSapanVerma" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/sapanv" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.youtube.com/user/EastIndiaComedy" target="_blank"><i class="fa fa-youtube"></i></a>
+				<a href="https://instagram.com/sapanv/" target="_blank"><i class="fa fa-instagram"></i></a>
 			</section>
 		</header>
 		<div class="main-body-wrapper">

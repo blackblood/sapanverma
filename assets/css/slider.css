@@ -45,12 +45,22 @@
 	.slider .slide img {
 		display: block;
 		margin: 0 auto;
+		float: none;
 	}
 	.slider .slide .writeup {
 		width: 80%;
+		display: block;
+    margin: 0 auto;
+    float: none;
+	}
+	.slider {
+		margin: 50px auto !important;
 	}
 
 	.slider .slide .photo {
-		width: 50%;
+		width: 90%;
+		display: block;
+    margin: 0 auto;
+    float: none;
 	}
 }
