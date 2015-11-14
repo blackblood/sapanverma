@@ -3,6 +3,19 @@
 	padding-bottom: 20px;
 	background: url('/assets/images/slices/profile/Pattern.png');
 }
+.video-titles-mob {
+	display: none;
+}
+.video-titles-mob a {
+	text-align: center;
+  border-bottom: 2px solid;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  margin: 10px;
+  width: calc(50% - 20px);
+  float: left;
+  margin-bottom: 30px;
+}
 .video-container {
 	display: inline-block;
 	position: relative;
@@ -54,7 +67,7 @@
 	display: block;
 	margin-top: 0px;
 }
-.videos .description p {
+.description p {
 	line-height: 30px;
 	text-align: center;
 	margin-top: 0px;
@@ -76,8 +89,17 @@ nav .dropdown a:hover {
 	background: #999999;
 	color: #fff;
 }
+
 @media all and (max-width: 480px) {
 	.videos .description {
 		width: 90%;
+	}
+	body {
+		font-size: 13px;
+	}
+}
+@media all and (max-width: 600px) {
+	.video-titles-mob {
+		display: block;
 	}
 }

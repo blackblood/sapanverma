@@ -4,6 +4,12 @@ body {
 	font-family: open-sans;
 }
 
+@media all and (max-width: 480px) {
+	body {
+		font-size: 13px;
+	}
+}
+header .fa-align-justify:hover { cursor: pointer; }
 * {
 	outline: none;
 }
@@ -73,6 +79,9 @@ footer > * {
   float: left;
   text-align: center;
   color: #84BE85;
+}
+footer a {
+	color: #84BE85;
 }
 
 footer .to-top a { 

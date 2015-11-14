@@ -72,6 +72,13 @@
 						$('.videos').prepend(video_description)
 					}
 				})
+				if($(window).width() < 580) {
+					var video_description = $('.videos .description')
+					$('.main-body-wrapper').prepend(video_description)
+				} else {
+					var video_description = $('.main-body-wrapper > .description')
+					$('.videos').prepend(video_description)
+				}
 			})
 		</script>
 	</head>
@@ -112,7 +119,7 @@
 		<div class="main-body-wrapper">
 			<div class='row video-titles-mob'>
 				<a href='/videos.html'>Standup Comedy</a>
-				<a href='/directional_showreel.html'>Directional Showreel</a>
+				<a href='/direction_showreel.html'>Directional Showreel</a>
 			</div>
 			<section class='video-container'>
 				<img src="/assets/images/slices/video/Video_2.jpg" />
@@ -149,7 +156,7 @@
 			</div>
 		</div>
 		<footer>
-			<div class="credit">Design: Saakshi Vyas</div>
+			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</div>
 			<div class="copyright">2015 Sapan Verma</div>
 			<div class="to-top"><a href="#">Back to top</a></div>
 		</footer>
