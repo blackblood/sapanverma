@@ -1,5 +1,6 @@
 .intro-section {
-	background-image: url('/assets/images/slices/profile/Profile_3.png');
+	background-image: url('/assets/images/slices/profile/Profile_3.jpg');
+	background-size: cover;
 	padding-bottom: 100px;
 }
 .intro-section .hello-img {
@@ -13,10 +14,11 @@
   color: #1A3851;
 }
 .intro-section-2 img {
-	width: 100%;
+	width: 70%;
 }
 .intro-section-2 {
-	background-image: url('/assets/images/slices/profile/Profile_4.png'); 
+	background-image: url('/assets/images/slices/profile/Profile_4.png');
+	background-position: -50px -90px;
 	background-color: #EAF5FA;
 	background-repeat: no-repeat;
 	float: left;
@@ -24,11 +26,12 @@
 .intro-section-2 .paragraph {
 	width: 50%;
 	float:left;
-	padding: 187px 0px;
+	padding: 140px 0px;
+	padding-bottom: 100px;
 }
 .intro-section-2 .paragraph p {
 	width: 80%;
-	margin: 0 auto;
+	float: right;
 	line-height: 30px;
 	color: #1A3851;
 }
@@ -44,15 +47,30 @@
 .intro-section-3 .image-wrapper img {
 	width: 70%;
   display: block;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding-top: 80px;
 }
 .intro-section-3 .paragraph p {
 	color: #1A3851;
 	padding-top: 100px;
 	width: 70%;
-  margin: 0 auto;
+  float: right;
+  margin-right: 50px;
   line-height: 30px;
+}
+.intro-section-3 .row:first-child p{
+	margin-right: 30px !important;
+}
+.intro-section-3 .row:first-child .image-wrapper img {
+	margin-left: 30px;
+}
+.intro-section-3 .row:last-child p{
+	margin-left: 30px;
+	float: left;
+}
+.intro-section-3 .row:last-child .image-wrapper img {
+	margin-right: 30px;
+	float: right;
 }
 .intro-section-3 .row:last-child {
 	padding-bottom: 100px;
@@ -63,7 +81,8 @@
 }
 .intro-section-2 .image-wrapper img {
 	display:block;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	margin-left: 50px;
 }
 
 @media all and (max-width: 768px) {
@@ -95,5 +114,10 @@
 	}
 	.intro-section-3 .image-wrapper img {
 		display: none !important;
+	}
+	.paragraph p {
+		float: none !important;
+    margin: 0 auto !important;
+    width: 80% !important;
 	}
 }

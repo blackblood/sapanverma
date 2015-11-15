@@ -48,7 +48,7 @@
 		float: none;
 	}
 	.slider .slide .writeup {
-		width: 80%;
+		width: 70%;
 		display: block;
     margin: 0 auto;
     float: none;
@@ -58,7 +58,7 @@
 	}
 
 	.slider .slide .photo {
-		width: 90%;
+		width: 100%;
 		display: block;
     margin: 0 auto;
     float: none;
