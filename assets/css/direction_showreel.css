@@ -89,6 +89,7 @@ nav .dropdown a:hover {
 	background: #999999;
 	color: #fff;
 }
+.video-container iframe { display: none; }
 
 @media all and (max-width: 480px) {
 	.videos .description {
