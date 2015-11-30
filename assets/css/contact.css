@@ -4,8 +4,9 @@
 	margin: 0 auto;
 	display: block;
 	margin-top: 50px;
-	background-image: url('/assets/images/slices/contact/Contact-me_1.jpg');
-	background-position: -40px 0px;
+	background-image: url('/assets/images/slices/contact/Contact-me.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 	position: relative;
 }
 .mailbox-mobile {
@@ -101,26 +102,26 @@
 	-moz-appearance: none;
 }
 .mailbox .name {
-	width: 54%;
-	right: 41px;
-	top: 88px;
+  width: 56%;
+  right: 38px;
+  top: 57px;
 }
 .mailbox .email {
-	right: 42px;
-  top: 144px;
-  width: 51%;
+  right: 40px;
+  top: 116px;
+  width: 53%;
 }
 .mailbox .mobile {
-	right: 41px;
-top: 200px;
-width: 35%;
+  right: 41px;
+  top: 174px;
+  width: 36%;
 }
 .mailbox textarea {
-	width: 67%;
-right: 41px;
-top: 297px;
-height: 63px;
-resize: none;
+  width: 68%;
+  right: 41px;
+  top: 278px;
+  height: 66px;
+  resize: none;
 }
 .main-body-wrapper {
 	background: url('/assets/images/slices/profile/Pattern.png');

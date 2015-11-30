@@ -1,6 +1,9 @@
 .videos {
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 	padding-bottom: 20px;
+	/*background: url('/assets/images/slices/profile/Pattern.png');*/
+}
+.main-body-wrapper {
 	background: url('/assets/images/slices/profile/Pattern.png');
 }
 .video-titles-mob {
@@ -28,9 +31,6 @@
 	max-width: 100%;
 	display: block;
 }
-.video-slider img {
-	margin: 0 10px;
-}
 .video-slider .slide {
 	margin: 0px 20px;
 	display: block;
@@ -49,23 +49,35 @@
 	position: relative;
 	margin-bottom: 50px;
 }
+.slick-slider {
+	padding-top: 0px;
+}
 .video-slider .fa {
 	position: absolute;
-	top: 50%;
+	top: 38%;
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	font-size: 40px;
+	font-size: 28px;
+	width: 30px;
+	height: 30px;
+	background: #F8DD46;
+	color: #999999;
+	text-align: center;
+	border-radius: 100%;
 	cursor: pointer;
 }
-.video-slider .fa-angle-left { left: -20px; }
+.video-slider .fa:hover {
+	color: #F8DD46;
+	background: #999999;
+}
+.video-slider .fa-angle-left { left: -35px; }
 .video-slider .fa-angle-right { right: -35px; }
 .videos .description {
 	width: 50%;
-	margin: 25px auto;
+	margin: 35px auto;
 	display: block;
-	margin-top: 0px;
 }
 .description p {
 	line-height: 30px;
