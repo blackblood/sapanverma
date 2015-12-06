@@ -17,6 +17,8 @@
   margin: 10px;
   width: calc(50% - 20px);
   float: left;
+  font-size: 16px;
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 .video-container {
@@ -114,5 +116,10 @@ nav .dropdown a:hover {
 @media all and (max-width: 600px) {
 	.video-titles-mob {
 		display: block;
+	}
+}
+@media all and (max-width: 580px) {
+	.main-body-wrapper .videos {
+		padding-top: 100px !important;
 	}
 }
