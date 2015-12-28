@@ -6,6 +6,13 @@
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="assets/css/college.css" />
+		<script type="text/javascript">
+			$(document).ready(function(){
+				if($(window).width() < 580) {
+					$('.contains-bold').after($('.company-names'))
+				}
+			})
+		</script>
 		<link 
 	</head>
 	<body>
@@ -28,7 +35,7 @@
 					<div class="title">Videos</div>
 					<div class="dropdown">
 						<a href="/videos.html">Standup Comedy</a>
-						<a href="/direction_showreel.html">Directional <br /> Showreel</a>
+						<a href="/direction_showreel.html">direction <br /> Showreel</a>
 					</div>
 				</div>
 				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
@@ -49,20 +56,20 @@
 				<img src="assets/images/slices/college/College_1.jpg" class="left-side-img" />
 				<div class="written-content">
 					<p>
-						I love performing at colleges! It's literally my favorite type of crowd because they're young,fun and don't file FIRs. I have a lot of jokes about the education system, pop culture and social media that go well with this kind of crowd. And we've created a standup, music, sketch and improv mixed show called Backbenchers which completely revolves around college life.
+						I love performing at colleges! It’s literally my favorite type of crowd because they’re young, fun and don’t file FIRs. I have a lot jokes about the education system, pop culture and social media that go well with this kind of a crowd. And we’ve created a standup, music, sketch and improv mixed show called Backbenchers which completely revolves around college life.
 					</p>
-					<p>
-						Some of the colleges I've performed at include:
-						ISB Hyderabad, BITS Pilani, BITS Hyderabad, BITS Goa, IIT Powai, Jai Hind College, IIM Trichy, NIT-K, JP University, NMIMS, St. Xavier's College, VIT, Sophia College, SIES College, KEM College, DY Patil Mumbai.
+					<p class="contains-bold">
+						Some of the colleges I’ve performed at include:<br/>
+						<b class="company-names">ISB Hyderabad<br>MICA Ahmedabad<br>IMT Ghaziabad<br>BITS Pilani<br>BITS Hyderabad<br>BITS Goa<br>IIT Mumbai<br>IIT Bhubaneswar<br>IIM Trichy<br>VIT Vellore<br>NIT Trichy<br>NIT-K<br>NIT Rourkela<br>St. Xavier's College<br>Jai Hind College Mumbai<br>JP University Solan<br>NMIMS Mumbai<br>Sophia College Mumbai<br>SIES Mumbai<br>KEM College Mumbai<br>DY Patil Mumbai</b>
 					</p>
 				</div>
 				<img src="assets/images/slices/college/College_2.jpg" class="right-side-img" />
 			</section>
 		</div>
 		<footer>
-			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</div>
+			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</a></div>
 			<div class="copyright">2015 Sapan Verma</div>
-			<div class="to-top"><a href="#">Back to top</a></div>
+			<div class="to-top"><a href="#">Back to top<i class="fa fa-arrow-up"></i></a></div>
 		</footer>
 	</body>
 </html>

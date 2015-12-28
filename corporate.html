@@ -6,6 +6,13 @@
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="assets/css/college.css" />
+		<script type="text/javascript">
+			$(document).ready(function(){
+				if($(window).width() < 580) {
+					$('.contains-bold').after($('.contains-bold b'))
+				}
+			})
+		</script>
 	</head>
 	<body>
 		<div class="dim-cloak"></div>
@@ -27,7 +34,7 @@
 					<div class="title">Videos</div>
 					<div class="dropdown">
 						<a href="/videos.html">Standup Comedy</a>
-						<a href="/direction_showreel.html">Directional <br /> Showreel</a>
+						<a href="/direction_showreel.html">Direction <br /> Showreel</a>
 					</div>
 				</div>
 				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
@@ -48,20 +55,22 @@
 				<img src="assets/images/slices/corporate/Corporate_1.jpg" class="left-side-img" />
 				<div class="written-content">
 					<p>
-						I've performed and hosted over 100 corporate events in the past. At such events I make sure that my content is clean, non-offensive and nothing is below the belt(unless some is wearing crocs). I can also write some jokes about your company or the event on request. The duration can range anywhere between 5 minutes to 45 minutes depending on your demand, budgets and audience's mood.
+						I’ve performed and hosted over 100 corporate events. At such events I make sure that my content is clean, non-offensive and appeals to people from all age groups. I can also write some jokes about your company or the event on request. The duration of the show can range anywhere between 15 minutes to 45 minutes depending on your demand, budgets and audience’s mood.
 					</p>
-					<p>
+					<p class="contains-bold">
 						Some of the corporate clients I have performed and hosted events for include:<br/>
-						<b>Indian Navy, Audi, Google, Vodafone, HSBC Bank, Deloitte, Essar, Microsoft, HUL, Puma, Volkswagen, Kotak Mahindra Bank, Starbucks, Cleartrip, Leo Burnett, Gilette, SBI Capital, Top Gear, Costa Coffee, PromaxBDA, Grazia, Vodafone, EXIM Bank, Bombay Realty, Directi, EEXMAX Awards, PromaxBDA Awards</b>.
+						<b class="company-names">
+							Indian Navy<br>Audi<br>Google<br>Vodafone<br>HSBC Bank<br>Deloitte<br>Essar<br>Microsoft<br>HUL<br>Puma<br>Volkswagen<br> Kotak Mahindra Bank<br>Starbucks<br>Cleartrip<br>Leo Burnett<br>Gilette<br>SBI Capital<br>Top Gear<br>Costa Coffee<br>PromaxBDA<br>Grazia<br>Vodafone<br>EXIM Bank<br>Bombay Realty<br>Directi<br>EEXMAX Awards<br>PromaxBDA Awards<br>Top Gear Magazine<br>Liberty Videocon Insurance<br>Metropolis Labs<br>Comic Con India<br>Dimensions Data
+						</b>
 					</p>
 				</div>
 				<img src="assets/images/slices/corporate/Corporate_2.jpg" class="right-side-img" />
 			</section>
 		</div>
 		<footer>
-			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</div>
+			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</a></div>
 			<div class="copyright">2015 Sapan Verma</div>
-			<div class="to-top"><a href="#">Back to top</a></div>
+			<div class="to-top"><a href="#">Back to top<i class="fa fa-arrow-up"></i></a></div>
 		</footer>
 	</body>
 </html>

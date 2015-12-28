@@ -25,7 +25,7 @@ p {
 .uppercase {
 	text-transform: uppercase;
 }
-header nav a.active {
+header nav .active {
 	border-bottom: 5px solid #F8DD46;
 }
 header {
@@ -38,11 +38,14 @@ header nav {
 	float: left;
 }
 
-header nav a {
+header nav a.uppercase,header nav .dropdown a {
 	display: block;
 	padding: 20px 0px;
 	color: #1D3850;
 	font-size: 15px;
+}
+header nav a.uppercase:hover {
+	border-bottom: 5px solid #F8DD46;
 }
 
 header nav > div {
@@ -88,6 +91,7 @@ footer > * {
   float: left;
   text-align: center;
   color: #84BE85;
+  font-size: 12px;
 }
 footer a {
 	color: #84BE85;
@@ -96,6 +100,11 @@ footer a {
 
 footer .to-top a { 
 	color: #84BE85;
+}
+
+footer .fa-arrow-up {
+	font-size: 12px;
+	margin-left: 5px;
 }
 
 @font-face {
@@ -244,7 +253,7 @@ header .fa-align-justify {
 }
 
 nav .title {
-	padding: 20px 0px;
+	padding: 19px 0px;
 }
 nav .title:hover {
 	cursor: pointer;
@@ -294,4 +303,13 @@ nav .dropdown a:hover {
 		width: 160px;
 		padding: 16px 0px;
 	}
+}
+.contains-bold {
+	margin-bottom: 0px;
+}
+.company-names {
+	display: block;
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 30px;
 }

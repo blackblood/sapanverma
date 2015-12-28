@@ -5,6 +5,9 @@ $(document).ready(function() {
 		if(ref == path) {
 			$(this).addClass('active')
 		}
+		if(path == "/videos.html" || path == "/direction_showreel.html") {
+			$('nav a[href="/videos.html"]').parents('.uppercase').addClass('active')
+		}
 	})
 	$('nav .title').hover(function(){
 		$('nav .dropdown').show()
