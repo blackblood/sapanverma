@@ -7,6 +7,7 @@ $(document).ready(function() {
 		}
 		if(path == "/videos.html" || path == "/direction_showreel.html") {
 			$('nav a[href="/videos.html"]').parents('.uppercase').addClass('active')
+			$(this).removeClass("active")
 		}
 	})
 	$('nav .title').hover(function(){

@@ -26,11 +26,16 @@ p {
 	text-transform: uppercase;
 }
 header nav .active {
-	border-bottom: 5px solid #F8DD46;
+	/*border-bottom: 5px solid #F8DD46;*/
+	color: #FBDB46 !important;
 }
 header {
 	display: table;
 	width: 100%;
+	position: fixed;
+	z-index: 3;
+	background: #fff;
+	border-bottom: 1px solid #eeeeee;
 }
 
 header nav {
@@ -45,7 +50,11 @@ header nav a.uppercase,header nav .dropdown a {
 	font-size: 15px;
 }
 header nav a.uppercase:hover {
-	border-bottom: 5px solid #F8DD46;
+	/*border-bottom: 5px solid #F8DD46;*/
+	color: #FBDB46;
+}
+header nav .title:hover {
+	color: #FBDB46;
 }
 
 header nav > div {
@@ -111,7 +120,9 @@ footer .fa-arrow-up {
   font-family: open-sans;
   src: url(/assets/fonts/OpenSans-Semibold.ttf);
 }
-
+.main-body-wrapper {
+	padding-top: 65px;
+}
 .main-body-wrapper .banner {
 	width: 100%;
 	max-width: 100%;
@@ -313,4 +324,8 @@ nav .dropdown a:hover {
   text-align: justify;
   margin-bottom: 30px;
   font-style: italic;
+}
+.company-names .row span {
+	width: 50%;
+	float: left;
 }
