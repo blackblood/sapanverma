@@ -13,6 +13,14 @@
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="/assets/css/college.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/contact.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(window).resize(function(){
+					var height = $('.mailbox').height()
+					$('.mailbox .name').css('top',Math.round(0.2026 * height) + 'px')
+				})
+			})
+		</script>
 	</head>
 	<body>
 		<div class="dim-cloak"></div>
@@ -34,7 +42,7 @@
 					<div class="title">Videos</div>
 					<div class="dropdown">
 						<a href="/videos.html">Standup Comedy</a>
-						<a href="/direction_showreel.html">direction <br /> Showreel</a>
+						<a href="/direction_showreel.html">Directional <br /> Showreel</a>
 					</div>
 				</div>
 				<div><a href="/corporate.html" class="uppercase">Corporate Shows</a></div>
@@ -50,11 +58,38 @@
 		</header>
 		<div class="main-body-wrapper">
 			<p class="intro-line">Got an event, a corporate show, a college festival or a party coming up? Feel free to hire me. I like money.</p>
+
 			<div class="mailbox">
-				<input type="text" class="name" />
-				<input type="email" class="email" />
-				<input type="text" class="mobile" />
-				<textarea rows="10" columns="20"></textarea>
+			<?php
+				//if "email" variable is filled out, send email
+
+			    $name=$_POST['name'];
+			    $email=$_POST['email'];
+			    $message=$_POST['message'];
+
+		    	$admin_email = "contact@sapanverma.in";
+		        $from='From:'. $email . "\r\n";;
+		        $subject="Message from SapanVerma.IN";
+		        if (isset($_POST['submit'])) {
+		        	if (mail($admin_email, $subject, $message, $from)) {
+			        	echo "Email sent!";
+			        }
+			        else {
+				        echo '<p>Something went wrong, go back and try again!</p>';
+				    }
+		   		}
+		      ?>
+				<form action="" method="post">
+
+				<input name="name" type="text" class="name" />
+
+				<input name="email" type="email" class="email" />
+
+				<input name="mobile" type="text" class="mobile" />
+
+				<textarea name="message" type="text" rows="10" columns="20"></textarea>
+				<input class="mailer" name="submit" type="submit" value="SUBMIT" />
+				</form>
 			</div>
 			<div class="mailbox-mobile">
 				<label>Name:</label>
@@ -65,13 +100,14 @@
 				<input type="text" class="mobile" />
 				<label>Event Description (date,venue,city,occasion,etc.)</label>
 				<textarea rows="10" columns="20"></textarea>
-				<input type="submit" value="SUBMIT" />
+				<input name="submit" type="submit" value="SUBMIT" />
+
 			</div>
 		</div>
 		<footer>
-			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</a></div>
+			<div class="credit"><a href="https://www.facebook.com/middleofsomething" target="_blank">Design: Saakshi Vyas</div>
 			<div class="copyright">2015 Sapan Verma</div>
-			<div class="to-top"><a href="#">Back to top<i class="fa fa-arrow-up"></i></a></div>
+			<div class="to-top"><a href="#">Back to top</a></div>
 		</footer>
 	</body>
 </html>

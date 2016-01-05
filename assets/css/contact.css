@@ -9,6 +9,20 @@
 	background-size: contain;
 	position: relative;
 }
+input[type="submit"].mailer {
+	/*background-image: url('/assets/images/slices/contact/button.png') no-repeat !important;*/
+	background-color: #fcfaf0 !important;
+	border-radius: 42px;
+	width: 100px;
+	top: 382px !important;
+	position: absolute;
+	left: 188px;
+	font-size: 13px;
+	height: 26px;
+	border: 2px solid #666666;
+	border-radius: 20px;
+	color: #1b3851
+}
 .mailbox-mobile {
 	display: none;
 	width: 60%;
