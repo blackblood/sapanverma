@@ -2,17 +2,17 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact Me | Sapan Verma</title>
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="/assets/js/header.js"></script>
+		<script type="text/javascript" src="/sapanverma/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/sapanverma/assets/js/header.js"></script>
 		<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" type="image/png" xhref="/favicon.png"> -->
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="/favicon.png"/>
 
-		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
-		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="/assets/css/college.css" />
-		<link rel="stylesheet" type="text/css" href="/assets/css/contact.css" />
+		<link rel="stylesheet" href="/sapanverma/bower_components/normalize-css/normalize.css" />
+		<link rel="stylesheet" href="/sapanverma/bower_components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/sapanverma/assets/css/college.css" />
+		<link rel="stylesheet" type="text/css" href="/sapanverma/assets/css/contact.css" />
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$(window).resize(function(){
@@ -59,7 +59,6 @@
 		<div class="main-body-wrapper">
 			<p class="intro-line">Got an event, a corporate show, a college festival or a party coming up? Feel free to hire me. I like money.</p>
 
-			<div class="mailbox">
 			<?php
 				//if "email" variable is filled out, send email
 
@@ -72,25 +71,34 @@
 		        $subject="Message from SapanVerma.IN";
 		        if (isset($_POST['submit'])) {
 		        	if (mail($admin_email, $subject, $message, $from)) {
-			        	echo "Email sent!";
+			        	$mailbox = '<div class="mailbox" style="background-image: url(\"/assets/images/slices/contact/Contact_msg.png\");z-index:2;"></div>';
+			        	echo $mailbox;
 			        }
 			        else {
-				        echo '<p>Something went wrong, go back and try again!</p>';
+				        $form .= '<div class="mailbox">';
+					    	$form .= "<form action='' method='post'>";
+					    	$form .= '<input name="name" type="text" class="name" />';
+					    	$form .= '<input name="email" type="email" class="email" />';
+					    	$form .= '<textarea name="message" type="text" rows="10" columns="20"></textarea>';
+					    	$form .= '<input class="mailer" name="submit" type="submit" value="SUBMIT" />';
+					    	$form .= '</form>';
+					    	$form .= '</div>';
+
+					    	echo $form;
+				      }
+				    } else {
+				    	$form .= '<div class="mailbox">';
+				    	$form .= "<form action='' method='post'>";
+				    	$form .= '<input name="name" type="text" class="name" />';
+				    	$form .= '<input name="email" type="email" class="email" />';
+				    	$form .= '<textarea name="message" type="text" rows="10" columns="20"></textarea>';
+				    	$form .= '<input class="mailer" name="submit" type="submit" value="SUBMIT" />';
+				    	$form .= '</form>';
+				    	$form .= '</div>';
+
+				    	echo $form;
 				    }
-		   		}
 		      ?>
-				<form action="" method="post">
-
-				<input name="name" type="text" class="name" />
-
-				<input name="email" type="email" class="email" />
-
-				<input name="mobile" type="text" class="mobile" />
-
-				<textarea name="message" type="text" rows="10" columns="20"></textarea>
-				<input class="mailer" name="submit" type="submit" value="SUBMIT" />
-				</form>
-			</div>
 			<div class="mailbox-mobile">
 				<label>Name:</label>
 				<input type="text" class="name" />

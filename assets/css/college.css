@@ -126,6 +126,9 @@ footer .fa-arrow-up {
 @media all and (max-width: 760px) {
 	.main-body-wrapper {
 		padding-top: 59px !important;
+	}
+	.company-names .row span {
+		width: 100% !important;
 	}	
 }
 .main-body-wrapper .banner {
@@ -329,9 +332,9 @@ nav .dropdown a:hover {
   width: 100%;
   text-align: justify;
   margin-bottom: 30px;
-  font-style: italic;
 }
 .company-names .row span {
 	width: 50%;
 	float: left;
+	color: #1A3851;
 }
