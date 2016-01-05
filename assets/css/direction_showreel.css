@@ -8,18 +8,21 @@
 }
 .video-titles-mob {
 	display: none;
+	width: auto;
+	margin: 0 auto;
 }
 .video-titles-mob a {
 	text-align: center;
-  border-bottom: 2px solid;
-  padding: 10px 0px;
+  padding: 1px 0px;
   box-sizing: border-box;
   margin: 10px;
-  width: calc(50% - 20px);
+  width: auto;
   float: left;
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+}
+.video-titles-mob a.active {
+	border-bottom: 2px solid;
 }
 .video-container {
 	display: inline-block;
@@ -98,7 +101,10 @@
 }
 @media all and (max-width: 600px) {
 	.video-titles-mob {
-		display: block;
+		display: table;
+	}
+	.main-body-wrapper .description p {
+		padding: 0px 10px;
 	}
 }
 @media all and (max-width: 580px) {

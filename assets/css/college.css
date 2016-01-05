@@ -123,6 +123,11 @@ footer .fa-arrow-up {
 .main-body-wrapper {
 	padding-top: 65px;
 }
+@media all and (max-width: 760px) {
+	.main-body-wrapper {
+		padding-top: 59px !important;
+	}	
+}
 .main-body-wrapper .banner {
 	width: 100%;
 	max-width: 100%;
@@ -252,6 +257,7 @@ aside.mobile-navbar .fa-remove {
 header .fa-align-justify {
 	padding: 20px;
 	display: none;
+	font-size: 17px;
 }
 
 @media all and (max-width: 1058px) {
@@ -303,12 +309,12 @@ nav .dropdown a:hover {
 		float: none;
 	}
 	header .social-icons .fa {
-		font-size: 14px;
-		line-height: 26px;
+		font-size: 13px;
+		line-height: 24px;
 	}
 	header .social-icons a {
-		width: 26px;
-		height: 26px;
+		width: 23px;
+		height: 23px;
 	}
 	header .social-icons {
 		width: 160px;
