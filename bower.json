@@ -16,5 +16,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "normalize-css": "^3.0.3",
+    "normalize-strings": "^1.0.4",
+    "slick-carousel": "^1.5.8"
+  }
 }
